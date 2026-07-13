@@ -1,30 +1,32 @@
-Dimension by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+SALMAN ARIF — PREMIUM PORTFOLIO
 
+1. Replace your current index.html with the included index.html.
+2. Keep your existing "images" folder beside index.html.
+3. All original image paths and filenames have been preserved exactly.
+4. Double-click start_portfolio.bat.
+5. The site opens at: http://localhost:8000
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+Expected structure:
+portfolio-folder/
+  index.html
+  start_portfolio.bat
+  images/
+    USW06132.JPG
+    RAG_CHATBOT.png
+    UrbanApp.png
+    vessel.PNG
+    University_pic.png
+    10-APIs-For-Currency-Exchange-Rates.jpg
+    app_prof.jfif
+    laptop.jpeg
+    movie recomm.jpeg
+    Potential Groundwater zones resize.png
+    gallery.jpeg
+    traffic.jpeg
+    rental bikes.jpeg
+    geospatial.jpg
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Notes:
+- The page is self-contained: no CSS or JavaScript library is required.
+- If an image is temporarily missing, a premium fallback panel appears instead of a broken-image icon.
+- For deployment, upload index.html beside your existing images folder.
