@@ -1,565 +1,2174 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Salman's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rwoI1beo8IXVZwD6X/8D/3Rt8YXVRtIuB69Q+4qpgfGfN5t5aPNUFsf4Fv3gJWXn" crossorigin="anonymous">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Salman Arif — Data Scientist building AI, machine learning, analytics, automation, and geospatial products.">
+  <meta name="author" content="Salman Arif">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <meta property="og:title" content="Salman Arif | Data Scientist">
+  <meta property="og:description" content="AI, machine learning, analytics, automation, and geospatial data science projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/RAG_CHATBOT.png">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>SALMAN ARIF</h1>
-								<p>Passionate and dedicated individual with a diverse skill set, blending creativity and </br>
-									analytical thinking to drive impactful solutions in DATA SCIENCE and GIS & REMOTE SENSING.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#education">Education</a></li>
-								<li><a href="#experience">Experience</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+  <title>Salman Arif | Data Scientist</title>
 
-				<!-- Main -->
-					<div id="main">
+  <style>
+    :root {
+      --bg: #070b14;
+      --bg-soft: #0b1120;
+      --surface: rgba(15, 23, 42, 0.68);
+      --surface-strong: rgba(18, 27, 49, 0.92);
+      --surface-hover: rgba(22, 34, 61, 0.92);
+      --text: #f7f9fc;
+      --muted: #a8b4c7;
+      --line: rgba(255, 255, 255, 0.10);
+      --line-strong: rgba(255, 255, 255, 0.18);
+      --cyan: #63e6ff;
+      --blue: #7c9cff;
+      --violet: #bd8cff;
+      --green: #68f6ba;
+      --shadow: 0 34px 90px rgba(0, 0, 0, 0.38);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --container: 1180px;
+      --nav-height: 78px;
+      color-scheme: dark;
+    }
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<div class="image-container" id="image-container">
-									<span class="image main"><img src="images/USW06132.JPG" alt="" style="width:100%; max-width:400px; height:500px; display: inline-block;" /></span>
-								</div>								
-								<p>Greetings, I am an individual driven by dedication and passion, equipped with a diverse skill set that extends across various creative and analytical domains. My journey in Data Science has been shaped by an unwavering curiosity and an ongoing commitment to learning.</p>
-								<p>Having built a strong foundation in Data Analytics, Machine Learning, GIS, and remote sensing, I excel in dynamic environments that demand adaptability and innovation. My expertise encompasses Power BI, Data Wrangling, Data Preprocessing, Data Analysis, and Data Visualization using Python programming. Additionally, I have a profound understanding and experience in utilizing GIS and remote sensing techniques for spatial analysis, environmental monitoring, and geospatial data visualization. I am proficient in utilizing ArcGIS products such as ArcGIS Pro, ArcGIS Online, ArcGIS StoryMaps, as well as open-source platforms like QGIS.</p>
-								<p>Throughout my professional experiences, I have consistently demonstrated a robust work ethic, effective communication, and a collaborative mindset. I am eager to contribute my skills and perspectives to new challenges and projects, and I am enthusiastic about showcasing my portfolio as a testament to my dedication and achievements, check out my <a href="#work">projects</a>.</p>
-							</article>
+    * {
+      box-sizing: border-box;
+    }
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--nav-height) + 24px);
+    }
 
-								<!-- Project 1 -->
-								<section class="project">
-									<h3>Project: Employee Evaluation RAG Chatbot</h3>
-									<span class="image main"><img src="images/RAG_CHATBOT.png" alt="Project RAG Chatbot" /></span>
-									<p>RAG Chatbot created using Flutter with database in Supabase and UI on Streamlit and deployed on Hugging Face Space</p>
-									<!-- Add links to the project, such as GitHub repository or LinkedIn post -->
-									<ul class="actions">
-										<li><a href="https://huggingface.co/spaces/SA1259/PMS_CHATBOT" class="button">View Project</a></li>
-									</ul>
-								</section>
+    body {
+      min-width: 320px;
+      margin: 0;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(99, 230, 255, 0.10), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(189, 140, 255, 0.09), transparent 30%),
+        linear-gradient(180deg, #070b14 0%, #090e19 48%, #060911 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
 
-								<!-- Project 1 -->
-								<section class="project">
-									<h3>Project: Urban Reporter Mobile App</h3>
-									<span class="image main"><img src="images/UrbanApp.png" alt="Project Urban Report App" /></span>
-									<p>Citizen-facing urban issue reporting app — pin potholes, broken lights & infrastructure problems on a live map. 
-										Built with Flutter, OpenStreetMap & Supabase (PostGIS).</p>
-									<!-- Add links to the project, such as GitHub repository or LinkedIn post -->
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/urban_reporter" class="button">View Project</a></li>
-									</ul>
-								</section>
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      opacity: 0.26;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+    }
 
-								<!-- Project 1 -->
-								<section class="project">
-									<h3>Project: Vessel Route Dashboard</h3>
-									<span class="image main"><img src="images/vessel.PNG" alt="Project 1 Image" /></span>
-									<p>Data Collection using API, Data wrangling, data analysis and Dashboard Creation of Vessel
-										data using Request, Pandas, Plotly, Matplotlib, Seaborn, Folium and Streamlit.</p>
-									<!-- Add links to the project, such as GitHub repository or LinkedIn post -->
-									<ul class="actions">
-										<li><a href="https://marine-dashboard.streamlit.app" class="button">View Project</a></li>
-									</ul>
-								</section>
+    body::after {
+      content: "";
+      position: fixed;
+      width: 520px;
+      height: 520px;
+      left: var(--pointer-x, 50vw);
+      top: var(--pointer-y, 30vh);
+      z-index: -2;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99, 230, 255, 0.08), transparent 64%);
+      transition: left 120ms linear, top 120ms linear;
+    }
 
-								<!-- Project 1 -->
-								<section class="project">
-									<h3>Project: Universities in Karachi</h3>
-									<span class="image main"><img src="images/University_pic.png" alt="Project 1 Image" /></span>
-									<p>The ArcGIS Story Map spotlights Karachi's top universities. It offers a succinct yet 
-										captivating overview of the city's academic excellence, guiding viewers through 
-										its rich educational landscape with immersive multimedia and interactive features.</p>
-									<!-- Add links to the project, such as GitHub repository or LinkedIn post -->
-									<ul class="actions">
-										<li><a href="https://storymaps.arcgis.com/stories/f867ea645d62405eb8ce37f75775ccf4" class="button">View Project</a></li>
-									</ul>
-								</section>
+    ::selection {
+      color: #031018;
+      background: var(--cyan);
+    }
 
-								<!-- Project 2 -->
-								<section class="project">
-									<h3>Project: Exchange Rates</h3>
-									<span class="image main"><img src="images/10-APIs-For-Currency-Exchange-Rates.jpg" alt="Project 2 Image" /></span>
-									<p>Data wrangling, data analysis and Explanatory Data Analysis of Exchange Rate Data from 2001-2023 to create insights using Pandas and Matplotlib.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/Exchange_Rates" class="button">View Project</a></li>
-									</ul>
-								</section>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-								<!-- Project 3 -->
-								<section class="project">
-									<h3>Project: App Profiles Analysis</h3>
-									<span class="image main"><img src="images/app_prof.jfif" alt="Project 3 Image" /></span>
-									<p>Data wrangling, data analysis and EDA of Google Play Store data to create an app using Pandas, Matplotlib and 
-										Seaborn.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/popular-app-category" class="button">View Project</a></li>
-									</ul>
-								</section>
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-								<!-- Project 4 -->
-								<section class="project">
-									<h3>Project: Laptops EDA</h3>
-									<span class="image main"><img src="images/laptop.jpeg" alt="Project 4 Image" /></span>
-									<p>Data wrangling, data analysis and EDA of Laptops data using Pandas, Matplotlib and 
-										Seaborn.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/Laptops_EDA.git" class="button">View Project</a></li>
-									</ul>
-								</section>
-							
-								<!-- Project 5 -->
-								<section class="project">
-									<h3>Project: Movie Recommendation System</h3>
-									<span class="image main"><img src="images/movie recomm.jpeg" alt="Project 5 Image" /></span>
-									<p>Data wrangling and data analysis of TMDB database using Pandas and create tags for 
-										Machine Learning along with bag of words to create a system and at last to add UI using 
-										Streamlit.</p>
-									<ul class="actions">
-										<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7147501208310546432/" class="button">View Project</a></li>
-									</ul>
-								</section>
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
 
-								<!-- Project 6 -->
-								<section class="project">
-									<h3>Project: Groundwater Potential Zones Mapping Using AHP</h3>
-									<span class="image main"><img src="images/Potential Groundwater zones resize.png" alt="Project 6 Image" /></span>
-									<p>Utilized AHP in ArcGIS Pro for groundwater potential mapping. Applied multi-criteria 
-										decision-making to identify high-potential zones, demonstrating proficiency in GIS analysis 
-										and environmental assessment.
-										</p>
-									<ul class="actions">
-										<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7145875597141979136/" class="button">View Project</a></li>
-									</ul>
-								</section>
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
 
-								<!-- Project 7 -->
-								<section class="project">
-									<h3>Project: American Gallery</h3>
-									<span class="image main"><img src="images/gallery.jpeg" alt="Project 7 Image" /></span>
-									<p>Data wrangling and data analysis of American Art Gallery data using Pandas to calculate the 
-										participant`s actual age and the age at the time of submission of art.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/AmericanGallery.git" class="button">View Project</a></li>
-									</ul>
-								</section>
+    .skip-link {
+      position: fixed;
+      left: 1rem;
+      top: -5rem;
+      z-index: 200;
+      padding: 0.8rem 1rem;
+      color: #02050a;
+      background: var(--cyan);
+      border-radius: 12px;
+      font-weight: 800;
+      transition: top 180ms ease;
+    }
 
-								<!-- Project 8 -->
-								<section class="project">
-									<h3>Project: Traffic Analysis</h3>
-									<span class="image main"><img src="images/traffic.jpeg" alt="Project 8 Image" /></span>
-									<p>Data Analysis of traffic data of a major road with the help of Pandas and Matplotlib to discover 
-										the reason for the slowness of traffic.
-										</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/TrafficAnalysis.git" class="button">View Project</a></li>
-									</ul>
-								</section>
+    .skip-link:focus {
+      top: 1rem;
+    }
 
-								<!-- Project 9 -->
-								<section class="project">
-									<h3>Project: Rental Bikes</h3>
-									<span class="image main"><img src="images/rental bikes.jpeg" alt="Project 9 Image" /></span>
-									<p>Data Wrangling and analysis to ascertain the factor controlling the increase or decrease in 
-										number of rental bikes using Pandas and Matplotlib.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/RentalBikes.git" class="button">View Project</a></li>
-									</ul>
-								</section>
+    .page-shell {
+      position: relative;
+      isolation: isolate;
+    }
 
-								<!-- Project 10 -->
-								<section class="project">
-									<h3>Project: Geospatial Data Analysis</h3>
-									<span class="image main"><img src="images/geospatial.jpg" alt="Project 10 Image" /></span>
-									<p>Geospatial Analysis and Visualization of multiple shapefiles of a city using GeoPandas and 
-										Matplotlib
-										</p>
-									<ul class="actions">
-										<li><a href="https://github.com/salmanA1259/shapeFile_Reading.git" class="button">View Project</a></li>
-									</ul>
-								</section>
+    .aurora {
+      position: fixed;
+      inset: -20%;
+      z-index: -4;
+      pointer-events: none;
+      filter: blur(90px);
+      opacity: 0.34;
+    }
 
-							<!-- Add more projects as needed -->
+    .aurora span {
+      position: absolute;
+      width: 34vw;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      mix-blend-mode: screen;
+      animation: auroraFloat 17s ease-in-out infinite alternate;
+    }
 
-							</article>
+    .aurora span:nth-child(1) {
+      left: 5%;
+      top: 8%;
+      background: rgba(29, 193, 236, 0.20);
+    }
 
-						<!-- Education -->
-						<article id="education">
-							<h2 class="major">Education</h2>
+    .aurora span:nth-child(2) {
+      right: 4%;
+      top: 18%;
+      background: rgba(125, 82, 255, 0.22);
+      animation-delay: -6s;
+    }
 
-							<!-- Education 3 -->
-							<section class="education">
-								<h3>Masters in Geospatial Data Science MSDS(GDS)</br>(Jan 2025 - Ongoing)</h3>
-								<h4>Thesis:</h4>
-								<p>TO BE DECIDED</p>
-								</section>
+    .aurora span:nth-child(3) {
+      left: 36%;
+      bottom: 5%;
+      background: rgba(52, 232, 171, 0.13);
+      animation-delay: -11s;
+    }
 
-							<!-- Education 2 -->
-							<section class="education">
-								<h3>Applied Data Science with Machine Learning </br>(Sept 2023 - Present)</h3>
-								<p> 	• Python for Data Science  </br>
-									• Exploratory Data Analysis (EDA)</br>
-									• Data Cleaning and preparation</br>
-									• Working with Data Sources using SQL</br>
-									• Statistics in python</br>
-									• Probability in python</br>
-									• Machine Learning in python</p>
-								</section>
+    @keyframes auroraFloat {
+      from { transform: translate3d(-4%, -3%, 0) scale(0.88); }
+      to { transform: translate3d(6%, 8%, 0) scale(1.12); }
+    }
 
-							<!-- Education 1 -->
-							<section class="education">
-								<h3>Bachelors in Geology</br>(Jan 2018 - April 2022)</h3>
-								<h4>Final Year Thesis:</h4>
-								<p>ASSESSMENT OF BHOLARI RIVER SAND FOR ITS GEOTECHNICAL CHARACTERIZATION </br>
-									AS FINE AGGREGATE</p>
-								</section>
+    .container {
+      width: min(calc(100% - 2rem), var(--container));
+      margin-inline: auto;
+    }
 
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 100;
+      height: var(--nav-height);
+      border-bottom: 1px solid transparent;
+      transition: background 220ms ease, border-color 220ms ease, backdrop-filter 220ms ease;
+    }
 
-						</article>
+    .site-header.scrolled {
+      background: rgba(7, 11, 20, 0.78);
+      border-color: var(--line);
+      backdrop-filter: blur(18px) saturate(140%);
+    }
 
-						<!-- Experience -->
-						<article id="experience">
-							<h2 class="major">Experience</h2>
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      gap: 2rem;
+    }
 
-							<!-- Experience 4 -->
-							<section class="experience">
-								<h3>Data Analyst, Robust Support & Solutions</br>(Mar 2024 - Present)</h3>
-								<p> As a data analyst, I collect, clean, and analyze data using Python and Excel, providing actionable insights through reports and dashboards using Power BI, collaborating cross-functionally, and ensuring data integrity and security.
-									</section>
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
 
-							<!-- Experience 3 -->
-							<section class="experience">
-								<h3>Jr. Data Science Intern, Techma Zone</br>(Jan 2024 - Feb 2024)</h3>
-								<p> As a junior data science intern, I actively contribute to data-driven projects by </br>employing analytical techniques, Machine Learning Algorithms, and collaborative </br> problem-solving.
-									</section>
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 13px;
+      background:
+        linear-gradient(145deg, rgba(99,230,255,0.28), rgba(124,156,255,0.10) 55%, rgba(189,140,255,0.18));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 10px 30px rgba(51, 191, 255, 0.12);
+      font-size: 0.82rem;
+    }
 
-							<!-- Experience 2-->
-							<section class="experience">
-								<h3>Environmental Geologist, Tekcellent Pvt. Ltd.</br>(Dec 2022 - Nov 2023)</h3>
-								<p> Conduct Phase I and Phase II Environmental Site Assessment (ESA) for Facilities Storing </br>Petroleum and Private Entities Dealing with Various Types of Contaminants (Both in</br> Soil and Groundwater).
-							</section>
-	
-							<!-- Experience 1 -->
-							<section class="experience">
-								<h3>Field Geologist, F&M Engineering</br>(Aug 2022 - Dec 2022)</h3>
-								<p> Conduct Complete Onsite Soil Testing Drilling Work.
-							</section>
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: -80%;
+      background: linear-gradient(110deg, transparent 45%, rgba(255,255,255,0.38) 50%, transparent 55%);
+      animation: brandShine 6s ease-in-out infinite;
+    }
 
+    @keyframes brandShine {
+      0%, 55% { transform: translateX(-45%); }
+      78%, 100% { transform: translateX(45%); }
+    }
 
-						</article>
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+    .nav-links a {
+      position: relative;
+      transition: color 180ms ease;
+    }
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<ul class="icons">
-									<p>Open for opportunities, collaborations, and ready to rock interviews! Drop me a line at.</p>
-									<li><a href="mailto:salmanarif1259@gmail.com" class="fas fa-envelope"><i class="label"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/salmanarif1259" class="icon brands fa-linkedin-in"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/salmanA1259" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: -0.45rem;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--cyan), var(--violet));
+      transition: right 220ms ease;
+    }
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+    .nav-links a:hover,
+    .nav-links a:focus-visible,
+    .nav-links a.active {
+      color: var(--text);
+    }
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+    .nav-links a:hover::after,
+    .nav-links a:focus-visible::after,
+    .nav-links a.active::after {
+      right: 0;
+    }
 
-			while (!deck.isInOrder()) {
-				print 'Iteration ' + i;
-				deck.shuffle();
-				i++;
-			}
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0.68rem 1rem;
+      border: 1px solid var(--line-strong);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.035);
+      font-size: 0.85rem;
+      font-weight: 750;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
 
-			print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    .nav-cta:hover,
+    .nav-cta:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(99,230,255,0.55);
+      background: rgba(99,230,255,0.08);
+    }
 
-								<section>
-									<h3 class="major">Lists</h3>
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      cursor: pointer;
+    }
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      display: block;
+      width: 18px;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      transition: transform 180ms ease, opacity 180ms ease;
+    }
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    .menu-toggle span {
+      position: relative;
+    }
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+    .menu-toggle span::before { top: -6px; }
+    .menu-toggle span::after { top: 6px; }
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+    .menu-toggle[aria-expanded="true"] span { background: transparent; }
+    .menu-toggle[aria-expanded="true"] span::before { transform: translateY(6px) rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span::after { transform: translateY(-6px) rotate(-45deg); }
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+    .hero {
+      min-height: 100svh;
+      display: grid;
+      align-items: center;
+      padding: calc(var(--nav-height) + 5.5rem) 0 5.5rem;
+    }
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+      align-items: center;
+      gap: clamp(2.5rem, 7vw, 7rem);
+    }
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin: 0 0 1.25rem;
+      color: #b8c5d9;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
 
-							</article>
+    .eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--cyan), transparent);
+    }
 
-					</div>
+    .hero h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(3.65rem, 8.7vw, 7.75rem);
+      line-height: 0.87;
+      letter-spacing: -0.072em;
+      font-weight: 900;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Salman Arif. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+    .gradient-text {
+      display: block;
+      padding-bottom: 0.12em;
+      color: transparent;
+      background: linear-gradient(100deg, #ffffff 5%, var(--cyan) 38%, var(--blue) 63%, var(--violet) 92%);
+      background-size: 180% 180%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: textFlow 8s ease infinite;
+    }
 
-			</div>
+    @keyframes textFlow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
 
-		<!-- BG -->
-			<div id="bg"></div>
+    .hero-copy {
+      max-width: 720px;
+      margin: 1.7rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.02rem, 1.7vw, 1.22rem);
+      line-height: 1.8;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .hero-copy strong {
+      color: var(--text);
+      font-weight: 700;
+    }
 
-	</body>
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 2.1rem;
+    }
+
+    .button {
+      --button-bg: rgba(255,255,255,0.045);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      min-height: 52px;
+      padding: 0.85rem 1.2rem;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--line-strong);
+      border-radius: 14px;
+      background: var(--button-bg);
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+    }
+
+    .button::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(115deg, transparent 25%, rgba(255,255,255,0.18), transparent 75%);
+      transform: translateX(-120%);
+      transition: transform 500ms ease;
+    }
+
+    .button:hover::before,
+    .button:focus-visible::before {
+      transform: translateX(120%);
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-3px);
+      border-color: rgba(99,230,255,0.48);
+      background: rgba(99,230,255,0.07);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.28);
+    }
+
+    .button.primary {
+      color: #041018;
+      border-color: transparent;
+      background: linear-gradient(110deg, var(--cyan), #a9efff 48%, var(--blue));
+      box-shadow: 0 16px 50px rgba(99,230,255,0.18);
+    }
+
+    .button.primary:hover,
+    .button.primary:focus-visible {
+      border-color: transparent;
+      background: linear-gradient(110deg, #8beeff, #c3f5ff 48%, #9db3ff);
+      box-shadow: 0 20px 56px rgba(99,230,255,0.25);
+    }
+
+    .button svg,
+    .project-link svg,
+    .social-link svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    .availability {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-top: 1.5rem;
+      color: #9fb0c6;
+      font-size: 0.85rem;
+    }
+
+    .availability-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(104,246,186,0.08), 0 0 22px rgba(104,246,186,0.55);
+      animation: statusPulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes statusPulse {
+      50% { transform: scale(0.76); opacity: 0.65; }
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+      perspective: 1200px;
+    }
+
+    .portrait-orbit {
+      position: absolute;
+      inset: 5% 0 auto auto;
+      width: min(100%, 390px);
+      aspect-ratio: 4 / 5;
+      transform-style: preserve-3d;
+      transition: transform 200ms ease-out;
+    }
+
+    .portrait-card {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 34px;
+      background: linear-gradient(155deg, rgba(255,255,255,0.10), rgba(255,255,255,0.025));
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,0.17);
+      transform: rotateY(-8deg) rotateX(3deg);
+      backdrop-filter: blur(18px);
+    }
+
+    .portrait-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, transparent 60%, rgba(6,9,17,0.82)),
+        linear-gradient(120deg, rgba(99,230,255,0.10), transparent 40%, rgba(189,140,255,0.11));
+    }
+
+    .portrait-card::after {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      z-index: 3;
+      pointer-events: none;
+      border-radius: 33px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035);
+    }
+
+    .portrait-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(0.86) contrast(1.05);
+    }
+
+    .portrait-card.image-missing img {
+      display: none;
+    }
+
+    .portrait-card.image-missing {
+      background:
+        radial-gradient(circle at 30% 28%, rgba(99,230,255,0.35), transparent 28%),
+        radial-gradient(circle at 76% 30%, rgba(189,140,255,0.25), transparent 32%),
+        linear-gradient(145deg, #111b31, #090d18 70%);
+    }
+
+    .portrait-card.image-missing::after {
+      content: "SA";
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,0.88);
+      font-size: 7rem;
+      font-weight: 900;
+      letter-spacing: -0.09em;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035);
+    }
+
+    .portrait-meta {
+      position: absolute;
+      left: 1.35rem;
+      right: 1.35rem;
+      bottom: 1.3rem;
+      z-index: 4;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .portrait-meta strong {
+      display: block;
+      font-size: 1rem;
+    }
+
+    .portrait-meta span {
+      color: #c2cbda;
+      font-size: 0.76rem;
+    }
+
+    .portrait-chip {
+      padding: 0.5rem 0.72rem;
+      border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 999px;
+      background: rgba(5,9,17,0.52);
+      color: #d8e2f0;
+      font-size: 0.7rem;
+      font-weight: 750;
+      backdrop-filter: blur(10px);
+    }
+
+    .orbit-ring {
+      position: absolute;
+      inset: -8%;
+      border: 1px solid rgba(99,230,255,0.14);
+      border-radius: 42px;
+      transform: rotate(7deg);
+      animation: orbitRing 8s ease-in-out infinite alternate;
+    }
+
+    .orbit-ring::before,
+    .orbit-ring::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 22px rgba(99,230,255,0.75);
+    }
+
+    .orbit-ring::before { left: 14%; top: -5px; }
+    .orbit-ring::after { right: 11%; bottom: -5px; background: var(--violet); }
+
+    @keyframes orbitRing {
+      to { transform: rotate(-4deg) scale(1.025); }
+    }
+
+    .float-card {
+      position: absolute;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      padding: 0.8rem 0.95rem;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      background: rgba(9,15,28,0.76);
+      box-shadow: 0 16px 45px rgba(0,0,0,0.28);
+      color: #dce6f3;
+      font-size: 0.76rem;
+      font-weight: 750;
+      backdrop-filter: blur(15px);
+      animation: floatingCard 5s ease-in-out infinite;
+    }
+
+    .float-card::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 16px rgba(99,230,255,0.75);
+    }
+
+    .float-card.one { left: -5%; top: 19%; }
+    .float-card.two { right: -7%; top: 58%; animation-delay: -1.8s; }
+    .float-card.three { left: 3%; bottom: -1%; animation-delay: -3.1s; }
+
+    @keyframes floatingCard {
+      50% { transform: translateY(-10px); }
+    }
+
+    .hero-metrics {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 3.5rem;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--line);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.22);
+    }
+
+    .metric {
+      padding: 1.35rem 1.4rem;
+      background: rgba(10,16,29,0.80);
+      backdrop-filter: blur(14px);
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 0.22rem;
+      font-size: 1.3rem;
+      letter-spacing: -0.03em;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+
+    section {
+      position: relative;
+      padding: 7rem 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      align-items: end;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .section-index {
+      margin: 0 0 0.55rem;
+      color: var(--cyan);
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(2.45rem, 5vw, 4.5rem);
+      line-height: 0.96;
+      letter-spacing: -0.055em;
+    }
+
+    .section-intro {
+      max-width: 620px;
+      margin: 0 0 0 auto;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 700ms cubic-bezier(.2,.75,.25,1), transform 700ms cubic-bezier(.2,.75,.25,1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .filter-button {
+      min-height: 42px;
+      padding: 0.55rem 0.95rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.025);
+      font-size: 0.8rem;
+      font-weight: 750;
+      cursor: pointer;
+      transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .filter-button:hover,
+    .filter-button:focus-visible,
+    .filter-button.active {
+      color: #061018;
+      border-color: transparent;
+      background: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .project-card {
+      grid-column: span 4;
+      min-height: 100%;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(160deg, rgba(18,27,49,0.78), rgba(9,14,26,0.82));
+      box-shadow: 0 18px 54px rgba(0,0,0,0.18);
+      transform-style: preserve-3d;
+      transition: transform 260ms cubic-bezier(.2,.75,.25,1), border-color 260ms ease, box-shadow 260ms ease, opacity 250ms ease;
+    }
+
+    .project-card.featured {
+      grid-column: span 6;
+    }
+
+    .project-card:hover {
+      border-color: rgba(99,230,255,0.34);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.34), 0 0 0 1px rgba(99,230,255,0.06);
+    }
+
+    .project-card.hidden {
+      display: none;
+    }
+
+    .project-media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background:
+        radial-gradient(circle at 30% 25%, rgba(99,230,255,0.19), transparent 30%),
+        linear-gradient(145deg, #121c32, #090e1a);
+    }
+
+    .project-media::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: linear-gradient(to top, rgba(7,11,20,0.66), transparent 48%);
+    }
+
+    .project-media::after {
+      content: attr(data-fallback);
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      color: rgba(255,255,255,0.30);
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      text-align: center;
+    }
+
+    .project-media img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 600ms cubic-bezier(.2,.75,.25,1), filter 300ms ease;
+    }
+
+    .project-card:hover .project-media img {
+      transform: scale(1.055);
+      filter: saturate(1.08) contrast(1.02);
+    }
+
+    .project-media.image-missing img {
+      display: none;
+    }
+
+    .project-number {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      z-index: 3;
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 11px;
+      background: rgba(7,11,20,0.58);
+      color: #dbe6f3;
+      font-size: 0.72rem;
+      font-weight: 800;
+      backdrop-filter: blur(10px);
+    }
+
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      min-height: 330px;
+      padding: 1.45rem;
+    }
+
+    .project-kicker {
+      margin: 0 0 0.45rem;
+      color: var(--cyan);
+      font-size: 0.67rem;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .project-title {
+      margin: 0;
+      font-size: 1.3rem;
+      line-height: 1.28;
+      letter-spacing: -0.025em;
+    }
+
+    .project-description {
+      margin: 0.85rem 0 1.1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: auto 0 1.15rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tags li {
+      padding: 0.32rem 0.58rem;
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 999px;
+      color: #c2cede;
+      background: rgba(255,255,255,0.025);
+      font-size: 0.67rem;
+      font-weight: 700;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: #e9f3ff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      transition: color 180ms ease;
+    }
+
+    .project-link svg {
+      transition: transform 180ms ease;
+    }
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      color: var(--cyan);
+    }
+
+    .project-link:hover svg,
+    .project-link:focus-visible svg {
+      transform: translate(3px, -3px);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .about-copy {
+      position: sticky;
+      top: calc(var(--nav-height) + 30px);
+    }
+
+    .about-copy p {
+      margin: 0 0 1.2rem;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .about-copy p:first-of-type {
+      color: #e9eef7;
+      font-size: 1.22rem;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 1rem;
+    }
+
+    .capability {
+      min-height: 200px;
+      padding: 1.35rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.025);
+      transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+    }
+
+    .capability:hover {
+      transform: translateY(-5px);
+      border-color: rgba(124,156,255,0.35);
+      background: rgba(124,156,255,0.055);
+    }
+
+    .capability-icon {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 1.1rem;
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 13px;
+      background: linear-gradient(145deg, rgba(99,230,255,0.12), rgba(189,140,255,0.10));
+      color: var(--cyan);
+      font-weight: 900;
+    }
+
+    .capability h3 {
+      margin: 0 0 0.55rem;
+      font-size: 1rem;
+    }
+
+    .capability p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 12px;
+      bottom: 12px;
+      width: 1px;
+      background: linear-gradient(var(--cyan), rgba(255,255,255,0.07) 35%, rgba(189,140,255,0.6));
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 38px 170px minmax(0, 1fr);
+      gap: 1.2rem;
+      position: relative;
+      padding: 1.5rem 1.5rem 1.5rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-dot {
+      width: 17px;
+      height: 17px;
+      margin-top: 0.35rem;
+      position: relative;
+      z-index: 1;
+      border: 4px solid var(--bg);
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 18px rgba(99,230,255,0.5);
+    }
+
+    .timeline-date {
+      color: var(--cyan);
+      font-size: 0.77rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .timeline-content h3 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .timeline-content h4 {
+      margin: 0.15rem 0 0.7rem;
+      color: #c2cede;
+      font-size: 0.86rem;
+      font-weight: 650;
+    }
+
+    .timeline-content p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 1rem;
+    }
+
+    .education-card {
+      min-height: 285px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(150deg, rgba(18,27,49,0.70), rgba(9,14,26,0.72));
+      transition: transform 220ms ease, border-color 220ms ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(189,140,255,0.32);
+    }
+
+    .education-card .year {
+      color: var(--violet);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .education-card h3 {
+      margin: 1rem 0 0.55rem;
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+
+    .education-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .education-card .detail {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: #dce5f1;
+      font-size: 0.78rem;
+    }
+
+    .contact-panel {
+      overflow: hidden;
+      position: relative;
+      padding: clamp(2rem, 6vw, 5rem);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius-xl);
+      background:
+        radial-gradient(circle at 15% 18%, rgba(99,230,255,0.18), transparent 28%),
+        radial-gradient(circle at 86% 74%, rgba(189,140,255,0.18), transparent 32%),
+        linear-gradient(135deg, rgba(16,25,45,0.92), rgba(8,13,24,0.95));
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .contact-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.05), transparent 68%);
+      transform: translateX(-100%);
+      animation: panelShine 9s ease-in-out infinite;
+    }
+
+    @keyframes panelShine {
+      60%, 100% { transform: translateX(100%); }
+    }
+
+    .contact-panel h2 {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: clamp(2.55rem, 6vw, 5.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .contact-panel p {
+      max-width: 650px;
+      margin: 1.4rem auto 2rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.7rem;
+      margin-top: 1.6rem;
+    }
+
+    .social-link {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: #dce6f4;
+      background: rgba(255,255,255,0.03);
+      transition: transform 180ms ease, color 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateY(-3px);
+      color: var(--cyan);
+      border-color: rgba(99,230,255,0.38);
+      background: rgba(99,230,255,0.06);
+    }
+
+    footer {
+      padding: 2.3rem 0 3rem;
+      color: #738299;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 150;
+      width: var(--scroll-progress, 0%);
+      height: 2px;
+      pointer-events: none;
+      background: linear-gradient(90deg, var(--cyan), var(--blue), var(--violet));
+      box-shadow: 0 0 16px rgba(99,230,255,0.6);
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 1.1rem;
+      bottom: 1.1rem;
+      z-index: 80;
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      opacity: 0;
+      pointer-events: none;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: var(--text);
+      background: rgba(9,15,28,0.76);
+      backdrop-filter: blur(12px);
+      transform: translateY(10px);
+      transition: opacity 180ms ease, transform 180ms ease, border-color 180ms ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover,
+    .back-to-top:focus-visible {
+      border-color: rgba(99,230,255,0.45);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 1050px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        width: min(100%, 600px);
+        min-height: 520px;
+        margin-inline: auto;
+      }
+
+      .portrait-orbit {
+        inset: 0 50% auto auto;
+        transform: translateX(50%);
+      }
+
+      .project-card,
+      .project-card.featured {
+        grid-column: span 6;
+      }
+    }
+
+    @media (max-width: 800px) {
+      :root { --nav-height: 70px; }
+
+      .nav-cta { display: none; }
+      .menu-toggle { display: grid; }
+
+      .nav-links {
+        position: fixed;
+        left: 1rem;
+        right: 1rem;
+        top: calc(var(--nav-height) + 0.65rem);
+        display: grid;
+        gap: 0;
+        padding: 0.65rem;
+        opacity: 0;
+        pointer-events: none;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(7,11,20,0.94);
+        box-shadow: 0 24px 70px rgba(0,0,0,0.42);
+        backdrop-filter: blur(20px);
+        transform: translateY(-8px);
+        transition: opacity 180ms ease, transform 180ms ease;
+      }
+
+      .nav-links.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 0.9rem 0.85rem;
+        border-radius: 12px;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        background: rgba(255,255,255,0.045);
+      }
+
+      .nav-links a::after { display: none; }
+
+      .hero {
+        min-height: auto;
+        padding-top: calc(var(--nav-height) + 4.5rem);
+      }
+
+      .hero h1 {
+        font-size: clamp(3.5rem, 17vw, 6rem);
+      }
+
+      .hero-metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .section-head,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-intro {
+        margin-left: 0;
+      }
+
+      .about-copy {
+        position: static;
+      }
+
+      .project-card,
+      .project-card.featured {
+        grid-column: span 12;
+      }
+
+      .timeline-item {
+        grid-template-columns: 38px 1fr;
+      }
+
+      .timeline-date {
+        grid-column: 2;
+      }
+
+      .timeline-content {
+        grid-column: 2;
+      }
+
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(calc(100% - 1.25rem), var(--container));
+      }
+
+      section { padding: 5rem 0; }
+
+      .hero-actions,
+      .contact-actions {
+        display: grid;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 450px;
+      }
+
+      .portrait-orbit {
+        width: min(86%, 350px);
+      }
+
+      .float-card {
+        font-size: 0.65rem;
+        padding: 0.65rem 0.7rem;
+      }
+
+      .float-card.one { left: 0; }
+      .float-card.two { right: 0; }
+
+      .hero-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .capability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-content {
+        min-height: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <div class="aurora" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Salman Arif — Home">
+          <span class="brand-mark" aria-hidden="true">SA</span>
+          <span>Salman Arif</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+            <span aria-hidden="true"></span>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a class="nav-cta" href="mailto:salmanarif1259@gmail.com">Let’s talk</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Data Scientist • AI Builder • Geospatial Analyst</p>
+            <h1>
+              Data into
+              <span class="gradient-text">intelligent products.</span>
+            </h1>
+            <p class="hero-copy">
+              I’m <strong>Salman Arif</strong>, a data professional building practical systems across
+              machine learning, retrieval-augmented generation, analytics, automation, dashboards,
+              and geospatial intelligence.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary magnetic" href="#projects">
+                Explore selected work
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6"/>
+                </svg>
+              </a>
+              <a class="button magnetic" href="https://github.com/salmanA1259" target="_blank" rel="noopener noreferrer">
+                View GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="availability">
+              <span class="availability-dot" aria-hidden="true"></span>
+              Open to Data Scientist, Machine Learning, and AI opportunities
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Profile image and areas of expertise">
+            <div class="portrait-orbit" id="portrait-orbit">
+              <div class="orbit-ring" aria-hidden="true"></div>
+              <div class="portrait-card image-frame">
+                <img src="images/USW06132.JPG" alt="Salman Arif" width="400" height="500">
+                <div class="portrait-meta">
+                  <div>
+                    <strong>Salman Arif</strong>
+                    <span>Karachi, Pakistan</span>
+                  </div>
+                  <span class="portrait-chip">Open to work</span>
+                </div>
+              </div>
+              <div class="float-card one">RAG & LLM Systems</div>
+              <div class="float-card two">Machine Learning</div>
+              <div class="float-card three">Geospatial Intelligence</div>
+            </div>
+          </div>
+
+          <div class="hero-metrics reveal" aria-label="Portfolio highlights">
+            <div class="metric"><strong>13+</strong><span>Completed portfolio projects</span></div>
+            <div class="metric"><strong>AI → GIS</strong><span>Cross-domain technical range</span></div>
+            <div class="metric"><strong>End-to-end</strong><span>From raw data to deployment</span></div>
+            <div class="metric"><strong>Business-first</strong><span>Built around practical outcomes</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="section-index">01 / Selected work</p>
+              <h2 class="section-title">Projects with<br>real-world depth.</h2>
+            </div>
+            <p class="section-intro">
+              A focused collection spanning AI assistants, mobile systems, dashboards, machine learning,
+              exploratory analytics, and geospatial decision support.
+            </p>
+          </div>
+
+          <div class="filter-row reveal" role="group" aria-label="Filter projects">
+            <button class="filter-button active" type="button" data-filter="all">All work</button>
+            <button class="filter-button" type="button" data-filter="ai">AI & ML</button>
+            <button class="filter-button" type="button" data-filter="analytics">Analytics</button>
+            <button class="filter-button" type="button" data-filter="gis">GIS</button>
+            <button class="filter-button" type="button" data-filter="apps">Applications</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured reveal tilt-card" data-category="ai apps">
+              <div class="project-media image-frame" data-fallback="RAG AI">
+                <img src="images/RAG_CHATBOT.png" alt="Employee Evaluation RAG Chatbot interface" loading="lazy">
+                <span class="project-number">01</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">AI • Knowledge systems</p>
+                <h3 class="project-title">Employee Evaluation RAG Chatbot</h3>
+                <p class="project-description">
+                  A deployed appraisal-support assistant that retrieves relevant process guidance from a vector database
+                  and generates context-aware answers through a conversational Streamlit interface.
+                </p>
+                <ul class="tags"><li>Python</li><li>RAG</li><li>Streamlit</li><li>PostgreSQL</li><li>pgvector</li></ul>
+                <a class="project-link" href="https://huggingface.co/spaces/SA1259/PMS_CHATBOT" target="_blank" rel="noopener noreferrer">
+                  View live project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card featured reveal tilt-card" data-category="apps gis">
+              <div class="project-media image-frame" data-fallback="URBAN">
+                <img src="images/UrbanApp.png" alt="Urban Reporter mobile application" loading="lazy">
+                <span class="project-number">02</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Mobile • Civic technology</p>
+                <h3 class="project-title">Urban Reporter Mobile App</h3>
+                <p class="project-description">
+                  A citizen-facing reporting application for mapping potholes, broken lights, and infrastructure issues
+                  on a live map backed by spatial data and cloud services.
+                </p>
+                <ul class="tags"><li>Flutter</li><li>OpenStreetMap</li><li>Supabase</li><li>PostGIS</li><li>Mobile UX</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/urban_reporter" target="_blank" rel="noopener noreferrer">
+                  Explore source code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card featured reveal tilt-card" data-category="analytics apps gis">
+              <div class="project-media image-frame" data-fallback="VESSEL">
+                <img src="images/vessel.PNG" alt="Vessel Route Analytics Dashboard" loading="lazy">
+                <span class="project-number">03</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Maritime data</p>
+                <h3 class="project-title">Vessel Route Dashboard</h3>
+                <p class="project-description">
+                  An interactive maritime dashboard built by collecting vessel data through APIs, transforming records
+                  with Pandas, and visualizing routes through Plotly, Folium, and Streamlit.
+                </p>
+                <ul class="tags"><li>API</li><li>Pandas</li><li>Plotly</li><li>Folium</li><li>Streamlit</li></ul>
+                <a class="project-link" href="https://marine-dashboard.streamlit.app" target="_blank" rel="noopener noreferrer">
+                  View deployed dashboard
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="gis apps">
+              <div class="project-media image-frame" data-fallback="STORY MAP">
+                <img src="images/University_pic.png" alt="Karachi universities ArcGIS StoryMap" loading="lazy">
+                <span class="project-number">04</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">GIS • Storytelling</p>
+                <h3 class="project-title">Universities in Karachi</h3>
+                <p class="project-description">
+                  An immersive ArcGIS StoryMap presenting Karachi’s academic landscape through spatial storytelling,
+                  multimedia, and interactive geographic context.
+                </p>
+                <ul class="tags"><li>ArcGIS</li><li>StoryMaps</li><li>Spatial UX</li></ul>
+                <a class="project-link" href="https://storymaps.arcgis.com/stories/f867ea645d62405eb8ce37f75775ccf4" target="_blank" rel="noopener noreferrer">
+                  Open StoryMap
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="analytics">
+              <div class="project-media image-frame" data-fallback="FX EDA">
+                <img src="images/10-APIs-For-Currency-Exchange-Rates.jpg" alt="Exchange rate data analysis" loading="lazy">
+                <span class="project-number">05</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Time series</p>
+                <h3 class="project-title">Exchange Rates Analysis</h3>
+                <p class="project-description">
+                  Exploratory analysis of exchange-rate data from 2001–2023, including cleaning, transformation,
+                  trend exploration, and explanatory visualizations.
+                </p>
+                <ul class="tags"><li>Pandas</li><li>Matplotlib</li><li>EDA</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/Exchange_Rates" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="analytics">
+              <div class="project-media image-frame" data-fallback="APP DATA">
+                <img src="images/app_prof.jfif" alt="Google Play Store app profile analysis" loading="lazy">
+                <span class="project-number">06</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Product insights</p>
+                <h3 class="project-title">App Profiles Analysis</h3>
+                <p class="project-description">
+                  Analysis of Google Play Store data to identify attractive app categories, user patterns,
+                  and product opportunities using exploratory data techniques.
+                </p>
+                <ul class="tags"><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/popular-app-category" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="analytics">
+              <div class="project-media image-frame" data-fallback="LAPTOPS">
+                <img src="images/laptop.jpeg" alt="Laptop market exploratory analysis" loading="lazy">
+                <span class="project-number">07</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Market data</p>
+                <h3 class="project-title">Laptops EDA</h3>
+                <p class="project-description">
+                  Exploratory analysis of laptop specifications and market data to understand pricing,
+                  feature relationships, and product segmentation.
+                </p>
+                <ul class="tags"><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/Laptops_EDA.git" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="ai apps">
+              <div class="project-media image-frame" data-fallback="RECOMMENDER">
+                <img src="images/movie recomm.jpeg" alt="Movie recommendation system" loading="lazy">
+                <span class="project-number">08</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Machine learning • Recommenders</p>
+                <h3 class="project-title">Movie Recommendation System</h3>
+                <p class="project-description">
+                  A content-based recommendation workflow using TMDB data, feature engineering, tag creation,
+                  bag-of-words representations, similarity ranking, and a Streamlit interface.
+                </p>
+                <ul class="tags"><li>Python</li><li>NLP</li><li>scikit-learn</li><li>Streamlit</li></ul>
+                <a class="project-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7147501208310546432/" target="_blank" rel="noopener noreferrer">
+                  View project post
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="gis analytics">
+              <div class="project-media image-frame" data-fallback="AHP GIS">
+                <img src="images/Potential Groundwater zones resize.png" alt="Groundwater potential zones map" loading="lazy">
+                <span class="project-number">09</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">GIS • Decision science</p>
+                <h3 class="project-title">Groundwater Potential Mapping</h3>
+                <p class="project-description">
+                  Multi-criteria groundwater potential analysis using the Analytical Hierarchy Process in ArcGIS Pro
+                  to identify and communicate high-potential zones.
+                </p>
+                <ul class="tags"><li>ArcGIS Pro</li><li>AHP</li><li>MCDA</li><li>Spatial Analysis</li></ul>
+                <a class="project-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7145875597141979136/" target="_blank" rel="noopener noreferrer">
+                  View project post
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="analytics">
+              <div class="project-media image-frame" data-fallback="GALLERY">
+                <img src="images/gallery.jpeg" alt="American Gallery dataset analysis" loading="lazy">
+                <span class="project-number">10</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Data transformation</p>
+                <h3 class="project-title">American Gallery</h3>
+                <p class="project-description">
+                  Analysis of American Art Gallery records, including data cleaning and calculations of participants’
+                  actual ages and ages at the time of submission.
+                </p>
+                <ul class="tags"><li>Pandas</li><li>Data Cleaning</li><li>Feature Engineering</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/AmericanGallery.git" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="analytics">
+              <div class="project-media image-frame" data-fallback="TRAFFIC">
+                <img src="images/traffic.jpeg" alt="Road traffic analysis" loading="lazy">
+                <span class="project-number">11</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Mobility</p>
+                <h3 class="project-title">Traffic Analysis</h3>
+                <p class="project-description">
+                  Analysis of major-road traffic data to investigate patterns and identify likely causes of traffic
+                  slowdowns through structured exploration and visualization.
+                </p>
+                <ul class="tags"><li>Pandas</li><li>Matplotlib</li><li>EDA</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/TrafficAnalysis.git" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="analytics">
+              <div class="project-media image-frame" data-fallback="BIKES">
+                <img src="images/rental bikes.jpeg" alt="Rental bike demand analysis" loading="lazy">
+                <span class="project-number">12</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Analytics • Demand patterns</p>
+                <h3 class="project-title">Rental Bikes</h3>
+                <p class="project-description">
+                  Data wrangling and analysis to investigate the factors associated with increases or decreases in
+                  rental-bike demand.
+                </p>
+                <ul class="tags"><li>Pandas</li><li>Matplotlib</li><li>Demand Analysis</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/RentalBikes.git" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-category="gis analytics">
+              <div class="project-media image-frame" data-fallback="GEOSPATIAL">
+                <img src="images/geospatial.jpg" alt="Geospatial analysis and visualization" loading="lazy">
+                <span class="project-number">13</span>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">GIS • Python</p>
+                <h3 class="project-title">Geospatial Data Analysis</h3>
+                <p class="project-description">
+                  Geospatial analysis and visualization of multiple city shapefiles using GeoPandas and Matplotlib,
+                  combining spatial processing with Python-based exploration.
+                </p>
+                <ul class="tags"><li>GeoPandas</li><li>Shapefiles</li><li>Matplotlib</li><li>GIS</li></ul>
+                <a class="project-link" href="https://github.com/salmanA1259/shapeFile_Reading.git" target="_blank" rel="noopener noreferrer">
+                  Explore repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="section-index">02 / About</p>
+              <h2 class="section-title">Broad capability.<br>Focused execution.</h2>
+            </div>
+            <p class="section-intro">
+              I combine analytical thinking, software tools, and domain understanding to build solutions that are
+              technically sound and useful to real people.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I am a data professional focused on transforming complex information into practical AI, analytics,
+                machine-learning, and geospatial products.
+              </p>
+              <p>
+                My work covers the complete lifecycle: gathering and cleaning data, exploring patterns, engineering
+                features, building models, designing dashboards, connecting APIs, and deploying usable interfaces.
+              </p>
+              <p>
+                My geology and geospatial background adds a spatial perspective to my data-science practice, while my
+                professional analytics experience keeps my work grounded in operational and business needs.
+              </p>
+            </div>
+
+            <div class="capability-grid">
+              <article class="capability reveal">
+                <div class="capability-icon">AI</div>
+                <h3>AI & Machine Learning</h3>
+                <p>RAG applications, NLP workflows, recommender systems, model development, evaluation, and deployment.</p>
+              </article>
+              <article class="capability reveal">
+                <div class="capability-icon">DA</div>
+                <h3>Data & Analytics</h3>
+                <p>Python, SQL, Power BI, Excel, exploratory analysis, data preparation, metrics, and visual storytelling.</p>
+              </article>
+              <article class="capability reveal">
+                <div class="capability-icon">AP</div>
+                <h3>Applications & Automation</h3>
+                <p>Streamlit, Flutter, APIs, Supabase, PostgreSQL, repeatable workflows, and decision-support interfaces.</p>
+              </article>
+              <article class="capability reveal">
+                <div class="capability-icon">GIS</div>
+                <h3>Geospatial Intelligence</h3>
+                <p>ArcGIS Pro, ArcGIS Online, QGIS, GeoPandas, remote sensing, spatial analysis, and map-based products.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="section-index">03 / Experience</p>
+              <h2 class="section-title">Professional<br>journey.</h2>
+            </div>
+            <p class="section-intro">
+              A multidisciplinary path from field and environmental geology to analytics, data science, and intelligent applications.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-date">Mar 2024 — Present</div>
+              <div class="timeline-content">
+                <h3>Data Analyst</h3>
+                <h4>Robust Support & Solutions</h4>
+                <p>
+                  Collect, clean, and analyze data using Python and Excel; develop actionable reporting and Power BI dashboards;
+                  collaborate across functions; and support data integrity, security, and decision-making.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-date">Jan 2024 — Feb 2024</div>
+              <div class="timeline-content">
+                <h3>Junior Data Science Intern</h3>
+                <h4>Techma Zone</h4>
+                <p>
+                  Contributed to data-driven projects using analytical techniques, machine-learning algorithms,
+                  structured experimentation, and collaborative problem-solving.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-date">Dec 2022 — Nov 2023</div>
+              <div class="timeline-content">
+                <h3>Environmental Geologist</h3>
+                <h4>Tekcellent Pvt. Ltd.</h4>
+                <p>
+                  Conducted Phase I and Phase II Environmental Site Assessments for petroleum-storage facilities and
+                  private entities handling soil and groundwater contaminants.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-date">Aug 2022 — Dec 2022</div>
+              <div class="timeline-content">
+                <h3>Field Geologist</h3>
+                <h4>F&amp;M Engineering</h4>
+                <p>Performed onsite soil testing, drilling coordination, field observations, and supporting geological work.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="section-index">04 / Education</p>
+              <h2 class="section-title">Learning that<br>compounds.</h2>
+            </div>
+            <p class="section-intro">
+              Formal geoscience training combined with applied data science, machine learning, and advanced geospatial study.
+            </p>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card reveal">
+              <span class="year">Jan 2025 — Ongoing</span>
+              <h3>Master’s in Geospatial Data Science — MSDS (GDS)</h3>
+              <p>Advanced study in spatial analytics, geospatial systems, data science, and applied research.</p>
+              <div class="detail">Current postgraduate programme</div>
+            </article>
+
+            <article class="education-card reveal">
+              <span class="year">Sept 2023 — Present</span>
+              <h3>Applied Data Science with Machine Learning</h3>
+              <p>Python, EDA, data cleaning, SQL, statistics, probability, and machine-learning foundations.</p>
+              <div class="detail">Applied technical training</div>
+            </article>
+
+            <article class="education-card reveal">
+              <span class="year">Jan 2018 — Apr 2022</span>
+              <h3>Bachelor’s in Geology</h3>
+              <p>Built a foundation in earth systems, field methods, environmental interpretation, and technical reporting.</p>
+              <div class="detail">Thesis: Assessment of Bholari River Sand for Geotechnical Characterization as Fine Aggregate</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <p class="section-index">05 / Contact</p>
+            <h2>Let’s build something<br>that makes data useful.</h2>
+            <p>
+              Open to full-time opportunities, serious collaborations, and conversations around data science,
+              machine learning, AI applications, analytics, and geospatial products.
+            </p>
+
+            <div class="contact-actions">
+              <a class="button primary magnetic" href="mailto:salmanarif1259@gmail.com">
+                Email Salman
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m4 6 8 6 8-6M5 5h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>
+              </a>
+              <a class="button magnetic" href="https://www.linkedin.com/in/salmanarif1259" target="_blank" rel="noopener noreferrer">
+                Connect on LinkedIn
+              </a>
+            </div>
+
+            <div class="social-row" aria-label="Social profiles">
+              <a class="social-link" href="mailto:salmanarif1259@gmail.com" aria-label="Email Salman">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m4 6 8 6 8-6M5 5h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/salmanarif1259" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56V19h3.38V8.5ZM5.25 3a1.96 1.96 0 1 0 0 3.92A1.96 1.96 0 0 0 5.25 3Zm13.6 9.98c0-3.16-1.68-4.63-3.92-4.63-1.81 0-2.62 1-3.07 1.7V8.5H8.48V19h3.38v-5.2c0-1.37.26-2.7 1.96-2.7 1.67 0 1.69 1.56 1.69 2.79V19h3.38l-.04-6.02Z"/></svg>
+              </a>
+              <a class="social-link" href="https://github.com/salmanA1259" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .08 1.53 1.06 1.53 1.06.89 1.57 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.95a9.3 9.3 0 0 1 2.5.35c1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="year"></span> Salman Arif. Designed as a fast, accessible, responsive portfolio.</div>
+    </footer>
+
+    <a class="back-to-top" href="#home" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg>
+    </a>
+  </div>
+
+  <script>
+    (() => {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const header = document.getElementById('site-header');
+      const progress = document.querySelector('.scroll-progress');
+      const backToTop = document.querySelector('.back-to-top');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      const portraitOrbit = document.getElementById('portrait-orbit');
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Keep the original image paths. If files are unavailable during testing,
+      // polished fallbacks appear without changing any src value.
+      document.querySelectorAll('.image-frame img').forEach((image) => {
+        const setFallback = () => image.closest('.image-frame')?.classList.add('image-missing');
+        image.addEventListener('error', setFallback, { once: true });
+        if (image.complete && image.naturalWidth === 0) setFallback();
+      });
+
+      const onScroll = () => {
+        const scrollTop = window.scrollY;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const amount = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+        document.documentElement.style.setProperty('--scroll-progress', `${amount}%`);
+        header.classList.toggle('scrolled', scrollTop > 24);
+        backToTop.classList.toggle('visible', scrollTop > 700);
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      menuToggle.addEventListener('click', () => {
+        const open = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!open));
+        menuToggle.setAttribute('aria-label', open ? 'Open navigation' : 'Close navigation');
+        navLinks.classList.toggle('open', !open);
+      });
+
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.setAttribute('aria-label', 'Open navigation');
+        });
+      });
+
+      if (!reduceMotion) {
+        document.addEventListener('pointermove', (event) => {
+          document.documentElement.style.setProperty('--pointer-x', `${event.clientX}px`);
+          document.documentElement.style.setProperty('--pointer-y', `${event.clientY}px`);
+        }, { passive: true });
+
+        document.querySelectorAll('.tilt-card').forEach((card) => {
+          card.addEventListener('pointermove', (event) => {
+            const rect = card.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width - 0.5;
+            const y = (event.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `perspective(900px) rotateX(${y * -4}deg) rotateY(${x * 5}deg) translateY(-5px)`;
+          });
+          card.addEventListener('pointerleave', () => {
+            card.style.transform = '';
+          });
+        });
+
+        document.querySelectorAll('.magnetic').forEach((button) => {
+          button.addEventListener('pointermove', (event) => {
+            const rect = button.getBoundingClientRect();
+            const x = event.clientX - rect.left - rect.width / 2;
+            const y = event.clientY - rect.top - rect.height / 2;
+            button.style.transform = `translate(${x * 0.08}px, ${y * 0.10}px) translateY(-3px)`;
+          });
+          button.addEventListener('pointerleave', () => {
+            button.style.transform = '';
+          });
+        });
+
+        const heroVisual = document.querySelector('.hero-visual');
+        heroVisual?.addEventListener('pointermove', (event) => {
+          const rect = heroVisual.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width - 0.5;
+          const y = (event.clientY - rect.top) / rect.height - 0.5;
+          portraitOrbit.style.transform = `translateX(50%) rotateX(${y * -3}deg) rotateY(${x * 5}deg)`;
+          if (window.innerWidth > 1050) portraitOrbit.style.transform = `rotateX(${y * -3}deg) rotateY(${x * 5}deg)`;
+        });
+        heroVisual?.addEventListener('pointerleave', () => {
+          portraitOrbit.style.transform = '';
+        });
+      }
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.10, rootMargin: '0px 0px -40px' });
+
+      document.querySelectorAll('.reveal').forEach((item, index) => {
+        if (!reduceMotion) item.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+        revealObserver.observe(item);
+      });
+
+      const sections = [...document.querySelectorAll('main section[id]')];
+      const navAnchors = [...navLinks.querySelectorAll('a')];
+      const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          navAnchors.forEach((anchor) => {
+            anchor.classList.toggle('active', anchor.getAttribute('href') === `#${entry.target.id}`);
+          });
+        });
+      }, { rootMargin: '-40% 0px -52%', threshold: 0 });
+      sections.forEach((section) => navObserver.observe(section));
+
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const projects = document.querySelectorAll('.project-card');
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const filter = button.dataset.filter;
+          filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+          projects.forEach((project) => {
+            const categories = project.dataset.category.split(' ');
+            project.classList.toggle('hidden', filter !== 'all' && !categories.includes(filter));
+          });
+        });
+      });
+    })();
+  </script>
+</body>
 </html>
